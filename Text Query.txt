@@ -66,5 +66,10 @@ RETURN result;
 END
 //
 DELIMITER ;
+SELECT 
+order_id,
+quantity,
+new_function(quantity ,2) AS divided_quantity
+FROM order_details;
 
-select new_function(10,2);
+
